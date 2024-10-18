@@ -58,6 +58,7 @@ Our objective is to reach the return address in memory and overwrite it with the
   We can see we filled the buffer with bunch of As (0x41s in Hex)
 
    Let's confinute the exection by running `continue` in `gdb`:
+   
 ![Seg Fault](./images/seg_fault.png)
 
 This shows that our input has affected the stack and led to a segmentation fault due to the overflow.
